@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useCallback } from 'react';
+import Table from './Table';
+import Form from './Form';
 
-function App() {
+const App = (props) => {
+  const [characters, setCharacters] = useState([]);
+
+  const removeCharacter = useCallback(
+    (index) => {
+      setCharacters(
+        characters.filter((characters, i) => {
+          return i !== index;
+        }),
+      );
+    },
+    [characters],
+  );
+
+  const handleSubmit = useCallback(
+    (character) => {
+      setCharacters([...characters, character]);
+    },
+    [characters],
+  );
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Table characterData={characters} removeCharacter={removeCharacter} />
+      <Form handleSubmit={handleSubmit} />
     </div>
   );
-}
+};
 
 export default App;
