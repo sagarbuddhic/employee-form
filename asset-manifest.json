@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/employee-form/static/css/main.71bd5e9e.chunk.css",
+    "main.js": "/employee-form/static/js/main.fc97ac66.chunk.js",
+    "main.js.map": "/employee-form/static/js/main.fc97ac66.chunk.js.map",
+    "runtime~main.js": "/employee-form/static/js/runtime~main.1d03440a.js",
+    "runtime~main.js.map": "/employee-form/static/js/runtime~main.1d03440a.js.map",
+    "static/js/2.361ad299.chunk.js": "/employee-form/static/js/2.361ad299.chunk.js",
+    "static/js/2.361ad299.chunk.js.map": "/employee-form/static/js/2.361ad299.chunk.js.map",
+    "index.html": "/employee-form/index.html",
+    "precache-manifest.25544d08ae55474eeb5746e809a28dc2.js": "/employee-form/precache-manifest.25544d08ae55474eeb5746e809a28dc2.js",
+    "service-worker.js": "/employee-form/service-worker.js",
+    "static/css/main.71bd5e9e.chunk.css.map": "/employee-form/static/css/main.71bd5e9e.chunk.css.map"
+  }
+}
